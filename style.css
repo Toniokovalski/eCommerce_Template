@@ -7,31 +7,124 @@
 
 /* Body */
 
-#main {
-    width: 980px;
+body {
+    background-color: white;
 }
 
 /* Header */
 
+#top {
+    width: 980px;
+    margin: 0 auto;
+}
 
+#header {
+    height: 100px;
+}
 
+.line {
+    width: 100%;
+    background: url("images/line.jpg") top repeat-x;
+}
 
+.menu {
+    width: 980px;
+    margin: 0 auto;
+}
 
+a {
+    text-decoration:none;
+}
 
+a:hover{
+    text-decoration:underline;
+}
 
+#header .logo {
+    width: 122px;
+    height: 15px;
+}
 
+#header .logo img {
+    padding: 40px 40px 45px 0;
+}
 
+.logo {
+    width: 132px;
+}
 
+h1 {
+    text-indent: -9999px;
+}
 
+.nav {
+    float: right;
+}
 
+.nav ul {
+    list-style:none;
+}
 
+.nav ul li {
+    font-family: Lato Regular, Arial, Helvetica, sans-serif;
+    float: left;
+    font-size:16px;
+    margin: 25px;
+}
 
+.image {
+    width: 980px;
+    margin: 0 auto;
+}
 
+#billboard {
+    overflow: hidden;
+}
 
+#shop {
+    width: 980px;
+    margin: 0 auto;
+}
+.clearfix {
+    clear: both;
+}
+.title {
+    clear: both;
+    margin-top: 60px;
+}
 
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
+.products {
+    width: 282px;
+    height: 360px;
+    border: 4px solid #f7f6f6;
+    float: left;
+    overflow: hidden;
+    background: url("images/product.jpg")no-repeat top;
+    margin-right: 40px;
+}
 
+.products.last {
+    margin-right: 0;
+}
 
+.products p {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 270px;
+}
+
+.price {
+    font-family: "Open Sans Bold", Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    text-align: center;
+}
+
+/* 282 ширина, 360 высота
 
 
 
