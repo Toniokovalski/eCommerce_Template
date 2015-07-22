@@ -110,6 +110,7 @@ h2 {
 
 .products.last {
     margin-right: 0;
+    overflow: hidden;
 }
 
 .products p {
@@ -124,17 +125,39 @@ h2 {
     text-align: center;
 }
 
-/* 282 ширина, 360 высота
+#brands {
+    width: 980px;
+    margin: 0 auto;
+}
 
+.brandimage {
+    float: left;
+    width: 144px;
+    height: 84px;
+    border: 4px solid #f7f6f6;
+    overflow: hidden;
+    margin-right: 47px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 
+.brandimage.last {
+    margin-right: 0;
+}
 
+#footer {
+    float: left;
+    overflow: hidden;
+}
 
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
 
-
-
-
-
-
+.stores {
+    width: 336px;
+    }
 
 
 
