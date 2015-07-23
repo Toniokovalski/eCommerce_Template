@@ -1,18 +1,73 @@
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+
 /* General */
+@font-face {
+    font-family: "Lato Regular";
+    src: url(fonts/lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url(fonts/lato/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url(fonts/open-sans/OpenSans-Bold.ttf);
+}
 
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Body */
-
-body {
-    background-color: white;
-}
-
 /* Header */
-
 #top {
     width: 980px;
     margin: 0 auto;
@@ -34,6 +89,11 @@ body {
 
 a {
     text-decoration:none;
+    color: darkgray;
+}
+
+p {
+    color: darkgray;
 }
 
 a:hover{
@@ -47,6 +107,8 @@ a:hover{
 
 #header .logo img {
     padding: 40px 40px 45px 0;
+    display: block;
+    float: left;
 }
 
 .logo {
@@ -58,19 +120,20 @@ h1 {
 }
 
 .nav {
-    float: right;
-}
-
-.nav ul {
-    list-style:none;
+    float: left;
+    overflow: hidden;
+    margin-top: 10px;
+    border-left: 1px solid #D8D8D8;
 }
 
 .nav ul li {
-    font-family: Lato Regular, Arial, Helvetica, sans-serif;
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
     float: left;
     font-size:16px;
-    margin: 25px;
+    margin: 15px 25px;
 }
+
+/* Сделать три контейнера. Корзинку бекграундом, а контейнеру фикс. ширину и высоту. Бордеру сделать закругление и сделать паддинг*/
 
 .image {
     width: 980px;
@@ -84,19 +147,26 @@ h1 {
 #shop {
     width: 980px;
     margin: 0 auto;
+    overflow: hidden;
 }
+
 .clearfix {
     clear: both;
 }
+
 .title {
     clear: both;
     margin-top: 60px;
 }
 
 h2 {
+    font-family: "Lato Bold", Arial, Helvetica, sans-serif;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 40px;
 }
+
+/* для ценника позиция абсолют, для родителя позиция релетив */
 
 .products {
     width: 282px;
@@ -114,7 +184,7 @@ h2 {
 }
 
 .products p {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     text-align: center;
     padding-top: 270px;
 }
@@ -145,27 +215,96 @@ h2 {
     margin-right: 0;
 }
 
-#footer {
-    float: left;
-    overflow: hidden;
-}
-
 .container {
     width: 980px;
     margin: 0 auto;
 }
 
 .stores {
-    width: 336px;
-    }
+    width: 169px;
+    float: left;
+    margin-right: 160px;
+}
 
+.store {
+    margin-bottom: 40px;
+}
 
+.store span {
+    display: block;
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 17px;
+    color: darkgray;
+}
 
+span.phone {
+    font-family: "Lato Bold", Arial, Helvetica, sans-serif;
+}
 
+.socials a {
+    margin-right: 16px;
+}
 
+.socials a.last {
+    margin-right: 0;
+}
 
+.blog {
+    width: 300px;
+    float: left;
+    margin-right: 40px;
+}
 
+.post {
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
 
+.post a {
+    font-family: "Lato Bold", Arial, Helvetica, sans-serif;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.support {
+    width: 280px;
+    overflow: hidden;
+}
+
+.links {
+    width: 130px;
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+    line-height: 20px;
+}
+
+.links.last {
+    width: 75px;
+    margin-right: 0;
+}
+
+.links ul li {
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 17px;
+}
+
+h3 {
+    font-family: "Lato Bold", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.container p {
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 17px;
+    line-height: 1.4;
+}
 
 
 
