@@ -10,8 +10,8 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, menu, nav, section {
     display: block;
 }
 body {
@@ -68,23 +68,22 @@ q:before, q:after {
 }
 
 /* Header */
-#top {
+.main {
     width: 980px;
     margin: 0 auto;
 }
 
-#header {
-    height: 100px;
+.head {
+    padding: 10px 0;
+}
+
+.menu {
+    overflow: hidden;
 }
 
 .line {
     width: 100%;
-    background: url("images/line.jpg") top repeat-x;
-}
-
-.menu {
-    width: 980px;
-    margin: 0 auto;
+    border-top: 1px solid #E8E8E8;
 }
 
 a {
@@ -96,23 +95,17 @@ p {
     color: darkgray;
 }
 
-a:hover{
+a:hover {
     text-decoration:underline;
 }
 
-#header .logo {
-    width: 122px;
-    height: 15px;
-}
-
-#header .logo img {
-    padding: 40px 40px 45px 0;
-    display: block;
+.logo {
     float: left;
 }
 
-.logo {
-    width: 132px;
+.logo img {
+    padding: 40px 40px 45px 0;
+    float: left;
 }
 
 h1 {
@@ -122,11 +115,11 @@ h1 {
 .nav {
     float: left;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 25px;
     border-left: 1px solid #D8D8D8;
 }
 
-.nav ul li {
+.nav li {
     font-family: "Lato Regular", Arial, Helvetica, sans-serif;
     float: left;
     font-size:16px;
@@ -134,21 +127,6 @@ h1 {
 }
 
 /* Сделать три контейнера. Корзинку бекграундом, а контейнеру фикс. ширину и высоту. Бордеру сделать закругление и сделать паддинг*/
-
-.image {
-    width: 980px;
-    margin: 0 auto;
-}
-
-#billboard {
-    overflow: hidden;
-}
-
-#shop {
-    width: 980px;
-    margin: 0 auto;
-    overflow: hidden;
-}
 
 .clearfix {
     clear: both;
@@ -164,6 +142,7 @@ h2 {
     font-size: 20px;
     text-align: center;
     margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 /* для ценника позиция абсолют, для родителя позиция релетив */
@@ -174,38 +153,30 @@ h2 {
     border: 4px solid #f7f6f6;
     float: left;
     overflow: hidden;
-    background: url("images/product.jpg")no-repeat top;
     margin-right: 40px;
+    position: relative;
 }
 
 .products.last {
     margin-right: 0;
-    overflow: hidden;
 }
 
 .products p {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     text-align: center;
-    padding-top: 270px;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
 .price {
     font-family: "Open Sans Bold", Arial, Helvetica, sans-serif;
-    padding-top: 15px;
     text-align: center;
-}
-
-#brands {
-    width: 980px;
-    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .brandimage {
     float: left;
-    width: 144px;
-    height: 84px;
     border: 4px solid #f7f6f6;
-    overflow: hidden;
     margin-right: 47px;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -216,8 +187,7 @@ h2 {
 }
 
 .container {
-    width: 980px;
-    margin: 0 auto;
+    overflow: hidden;
 }
 
 .stores {
@@ -242,7 +212,12 @@ span.phone {
     font-family: "Lato Bold", Arial, Helvetica, sans-serif;
 }
 
+.socials a:hover {
+    color: darkblue;
+}
+
 .socials a {
+    font-size: 18px;
     margin-right: 16px;
 }
 
@@ -276,7 +251,6 @@ span.phone {
 .links {
     width: 130px;
     float: left;
-    overflow: hidden;
     margin-right: 20px;
     line-height: 20px;
 }
@@ -306,11 +280,33 @@ h3 {
     line-height: 1.4;
 }
 
+.downfooter {
+    border-top: 1px solid #E8E8E8;;
+}
 
+.copyright {
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: darkgray;
+    width: 300px;
+    float: left;
+    margin-top: 24px;
+}
 
+.creditcards {
+    width: auto;
+    float: right;
+}
 
+.creditcards a {
+    margin-top: 20px;
+    margin-right: 20px;
+    float: left;
+}
 
-
+.creditcards .last {
+    margin-right: 0;
+}
 
 
 
