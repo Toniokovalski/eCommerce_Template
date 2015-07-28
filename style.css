@@ -137,22 +137,105 @@ a:hover {
     float: left;
 }
 
+.slice {
+    width: 1px;
+    height: 45px;
+    margin-top: 25px;
+    float: left;
+    background: #D8D8D8 center no-repeat;
+}
+
 h1 {
     text-indent: -9999px;
 }
 
+/*Dropdown menu*/
 .nav {
     float: left;
-    overflow: hidden;
     margin-top: 25px;
-    border-left: 1px solid #D8D8D8;
 }
 
 .nav li {
     font-family: "Lato Regular", Arial, Helvetica, sans-serif;
     float: left;
     font-size:16px;
-    margin: 15px 25px;
+}
+
+.menu-wrap {
+    width:auto;
+    float: left;
+}
+
+.menu a {
+    transition:all linear 0.15s;
+}
+
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:underline;
+    color:black;
+}
+
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:16px;
+}
+
+.menu > ul > li > a {
+    height: 50px;
+    padding:15px 20px;
+    display:inline-block;
+}
+
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+
+.sub-menu {
+    width:977px;
+    padding:5px 0px;
+    position:absolute;
+    top:76px;
+    left:-162px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    background:white;
+}
+
+.sub-menu li {
+    display:block;
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+
+.sub-menu li a {
+    padding:15px 20px;
+    display:block;
+}
+
+.links-menu {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    line-height: 20px;
+}
+
+.links-menu {
+    float: left;
+}
+
+.links-menu li {
+    float: none;
 }
 
 .cart {
@@ -220,6 +303,7 @@ h1 {
 
 .clearfix {
     clear: both;
+    display: block;
 }
 
 .title {
