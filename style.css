@@ -106,7 +106,7 @@ q:before, q:after {
     padding: 10px 0;
 }
 
-.menu {
+#billboard {
     overflow: hidden;
 }
 
@@ -182,7 +182,6 @@ h1 {
 
 .image {
     position: relative;
-    display: block;
 }
 
 .big_title {
@@ -190,8 +189,8 @@ h1 {
     font-size: 40px;
     color: white;
     position: absolute;
-    top: 260px;
-    left: 220px;
+    top: 130px;
+    left: 50px;
     text-transform: uppercase;
 }
 
@@ -200,8 +199,8 @@ h1 {
     font-size: 22px;
     color: white;
     position: absolute;
-    top: 310px;
-    left: 220px;
+    top: 180px;
+    left: 50px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
@@ -213,8 +212,8 @@ h1 {
     text-align: center;
     background: red;
     position: absolute;
-    top: 360px;
-    left: 220px;
+    top: 230px;
+    left: 50px;
     padding: 20px 50px;
     text-transform: uppercase;
 }
@@ -238,16 +237,23 @@ h2 {
 
 .products {
     width: 282px;
-    height: 360px;
     border: 4px solid #f7f6f6;
     float: left;
-    overflow: hidden;
     margin-right: 40px;
     position: relative;
+    padding-bottom: 40px;
 }
 
 .products.last {
     margin-right: 0;
+}
+
+.products a {
+    float: left;
+}
+
+.products img {
+    width: 100%;
 }
 
 .products p {
@@ -269,6 +275,7 @@ h2 {
     color: white;
     position: absolute;
     top: 30px;
+    left: -4px;
     background: red;
     width: 75px;
     height: 35px;
